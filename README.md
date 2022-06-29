@@ -1,2 +1,4 @@
 # SimpleBizSDK
 一个简单的三方业务SDK。希望每接入一个第三方业务只需要改动很少的东西即可进行调用实现。
+
+使用方法：参照gaode所示。service继承AbstarctSDK。request继承ISDKRequst并编写调用即可。
