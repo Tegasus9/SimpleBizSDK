@@ -1,4 +1,4 @@
-package com.tegasus9.sdk.exception;
+package com.tegasus9.sdk.core.exception;
 
 /**
  * @author XiongYiGe

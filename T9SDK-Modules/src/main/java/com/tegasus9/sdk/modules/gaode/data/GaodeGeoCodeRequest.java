@@ -1,8 +1,8 @@
-package com.tegasus9.sdk.service.gaode.data;
+package com.tegasus9.sdk.modules.gaode.data;
 
 import cn.hutool.core.bean.BeanUtil;
-import com.tegasus9.sdk.ISDKRequest;
-import com.tegasus9.sdk.ISDKResponse;
+import com.tegasus9.sdk.core.ISDKRequest;
+import com.tegasus9.sdk.core.ISDKResponse;
 import lombok.Data;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -42,10 +42,9 @@ public class GaodeGeoCodeRequest implements ISDKRequest, ISDKResponse<GaodeGeoCo
     /**
      * 此处只用来设置key存放。
      * @param encryptKey
-     * @throws Exception
      */
     @Override
-    public void encryptHttpBody(String encryptKey) throws Exception {
+    public void encryptHttpBody(String encryptKey) {
         this.setKey(encryptKey);
     }
 

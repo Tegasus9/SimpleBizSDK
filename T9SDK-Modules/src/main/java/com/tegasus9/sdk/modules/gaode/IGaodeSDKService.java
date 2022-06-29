@@ -1,7 +1,7 @@
-package com.tegasus9.sdk.service.gaode;
+package com.tegasus9.sdk.modules.gaode;
 
-import com.tegasus9.sdk.service.gaode.data.GaodeGeoCodeRequest;
-import com.tegasus9.sdk.service.gaode.data.GaodeGeoCodeResponse;
+import com.tegasus9.sdk.modules.gaode.data.GaodeGeoCodeRequest;
+import com.tegasus9.sdk.modules.gaode.data.GaodeGeoCodeResponse;
 
 /**
  * @author XiongYiGe

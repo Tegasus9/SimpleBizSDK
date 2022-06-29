@@ -1,4 +1,4 @@
-package com.tegasus9.sdk.service.gaode.data;
+package com.tegasus9.sdk.modules.gaode.data;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import lombok.Data;

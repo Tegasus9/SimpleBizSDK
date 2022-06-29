@@ -1,10 +1,10 @@
-package com.tegasus9.sdk.service.gaode;
+package com.tegasus9.sdk.modules.gaode;
 
 import cn.hutool.core.map.MapUtil;
 import com.alibaba.fastjson.JSON;
-import com.tegasus9.sdk.AbstractSDKService;
-import com.tegasus9.sdk.ISDKRequest;
-import com.tegasus9.sdk.exception.SDKException;
+import com.tegasus9.sdk.core.AbstractSDKService;
+import com.tegasus9.sdk.core.ISDKRequest;
+import com.tegasus9.sdk.core.exception.SDKException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
@@ -29,7 +29,7 @@ public abstract class AbstractGaodeSDKService extends AbstractSDKService {
     }
 
     @Override
-    protected Map<String, ?> processHttpBody(ISDKRequest sdkRequest) throws Exception {
+    protected Map<String, ?> processHttpBody(ISDKRequest sdkRequest) {
         sdkRequest.encryptHttpBody(null);
         Map<String, String> map = MapUtil.of("key", key);
         sdkRequest.setDefaultProperty(map);

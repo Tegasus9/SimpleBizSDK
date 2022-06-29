@@ -1,8 +1,8 @@
-package com.tegasus9.sdk.repository;
+package com.tegasus9.sdk.repository.gaode;
 
-import com.tegasus9.sdk.service.gaode.IGaodeSDKService;
-import com.tegasus9.sdk.service.gaode.data.GaodeGeoCodeRequest;
-import com.tegasus9.sdk.service.gaode.data.GaodeGeoCodeResponse;
+import com.tegasus9.sdk.modules.gaode.IGaodeSDKService;
+import com.tegasus9.sdk.modules.gaode.data.GaodeGeoCodeRequest;
+import com.tegasus9.sdk.modules.gaode.data.GaodeGeoCodeResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 

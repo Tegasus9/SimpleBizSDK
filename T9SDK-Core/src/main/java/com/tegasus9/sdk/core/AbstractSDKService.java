@@ -1,5 +1,6 @@
-package com.tegasus9.sdk;
+package com.tegasus9.sdk.core;
 
+import com.tegasus9.sdk.core.exception.SDKException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -20,7 +21,7 @@ public abstract class AbstractSDKService implements ISDKService {
     @Resource
     private RestTemplate restTemplate;
     @Override
-    public <R> R sdkSend(ISDKRequest httpBody, HttpMethod httpMethod, String url, Class<R> responseType) throws Exception {
+    public <R> R sdkSend(ISDKRequest httpBody, HttpMethod httpMethod, String url, Class<R> responseType) throws SDKException {
         //1. 获取请求头
         HttpHeaders httpHeader = getHttpHeader();
 
@@ -47,7 +48,7 @@ public abstract class AbstractSDKService implements ISDKService {
      * @param sdkRequest
      * @return
      */
-    protected abstract Map<String,?> processHttpBody(ISDKRequest sdkRequest) throws Exception;
+    protected abstract Map<String,?> processHttpBody(ISDKRequest sdkRequest);
 
     /**
      * 获取请求头

@@ -1,4 +1,4 @@
-package com.tegasus9.sdk;
+package com.tegasus9.sdk.core;
 
 import org.springframework.http.HttpHeaders;
 
@@ -35,7 +35,7 @@ public interface ISDKRequest {
      * @param encryptKey
      * @throws Exception
      */
-    void encryptHttpBody(String encryptKey) throws Exception;
+    void encryptHttpBody(String encryptKey);
 
     /**
      * 将此request转换成map

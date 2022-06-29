@@ -1,4 +1,4 @@
-package com.tegasus9.sdk;
+package com.tegasus9.sdk.core;
 
 /**
  * @author XiongYiGe
